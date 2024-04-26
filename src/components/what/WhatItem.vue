@@ -4,7 +4,7 @@
    >{{ title }}
    <button
     v-if="btn"
-    @[desktop?'mouseenter':'click']="togglePopup"
+           @[desktop?'mouseenter':'click']="togglePopup"
     @[desktop&&'mouseleave']="togglePopup"
     class="relative w-[24px] aspect-square bg-[url('/src/assets/img/svg/i.svg')] bg-center bg-cover bg-no-repeat"
    >
