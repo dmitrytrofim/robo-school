@@ -4,13 +4,13 @@
    >{{ title }}
    <button
     v-if="btn"
-    @mouseenter="showPopup"
-    @mouseleave="closePopup"
+    @[desktop?'mouseenter':'click']="togglePopup"
+    @[desktop&&'mouseleave']="togglePopup"
     class="relative w-[24px] aspect-square bg-[url('/src/assets/img/svg/i.svg')] bg-center bg-cover bg-no-repeat"
    >
     <span
      v-show="popup"
-     class="absolute left-0 bottom-[40px] text-16 font-400 whitespace-nowrap bg-[var(--b-white)] p-[15px_20px] shadow-[0_2px_8px_0_rgba(20,16,36,0.1)] rounded-[5px] pointer-events-none"
+     class="absolute left-[50%] bottom-[40px] translate-x-[-50%] text-16 font-400 whitespace-nowrap bg-[var(--b-white)] p-[15px_20px] shadow-[0_2px_8px_0_rgba(20,16,36,0.1)] rounded-[5px] pointer-events-none"
      >{{ textPopup }}</span
     >
    </button></span
@@ -40,14 +40,15 @@ export default defineComponent({
  data() {
   return {
    popup: false,
+   desktop: true,
   };
  },
+ mounted() {
+  window.innerWidth > 1024 ? (this.desktop = true) : (this.desktop = false);
+ },
  methods: {
-  showPopup() {
-   this.popup = true;
-  },
-  closePopup() {
-   this.popup = false;
+  togglePopup() {
+    this.popup = !this.popup;
   },
  },
 });
