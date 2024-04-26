@@ -4,8 +4,8 @@
    >{{ title }}
    <button
     v-if="btn"
-           @[desktop?'mouseenter':'click']="togglePopup"
-    @[desktop&&'mouseleave']="togglePopup"
+    @[eventEnter]="togglePopup"
+    @[eventLeave]="togglePopup"
     class="relative w-[24px] aspect-square bg-[url('/src/assets/img/svg/i.svg')] bg-center bg-cover bg-no-repeat"
    >
     <span
@@ -46,9 +46,17 @@ export default defineComponent({
  mounted() {
   window.innerWidth > 1024 ? (this.desktop = true) : (this.desktop = false);
  },
+ computed: {
+  eventEnter() {
+   return this.desktop ? 'mouseenter' : 'click';
+  },
+  eventLeave() {
+   return this.desktop && 'mouseleave';
+  },
+ },
  methods: {
   togglePopup() {
-    this.popup = !this.popup;
+   this.popup = !this.popup;
   },
  },
 });
