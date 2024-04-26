@@ -13,11 +13,7 @@
        </p>
        <v-button>Записаться на курс</v-button>
       </div>
-      <img
-       class="absolute bottom-0 right-[-200px] w-[783px] aspect-[0.853]"
-       src="/src/assets/img/woman.png"
-       alt=""
-      />
+      <img class="absolute bottom-0 right-[-200px] w-[783px] aspect-[0.853]" src="/src/assets/img/woman.png" alt="" />
      </div>
     </v-container>
    </section>
@@ -30,19 +26,10 @@
        программирования
       </p>
       <div class="grid grid-cols-4 gap-[40px]">
-       <about-item
-        num="10"
-        text="УМК по различным направлениям по робототехнике"
-       />
+       <about-item num="10" text="УМК по различным направлениям по робототехнике" />
        <about-item num="20" text="Школ, в которых запущена робототехника" />
-       <about-item
-        num="100"
-        text="Педагогов прошедших курсы повышения квалификации"
-       />
-       <about-item
-        num="10 000"
-        text="Обученных детей на базе собственных центров"
-       />
+       <about-item num="100" text="Педагогов прошедших курсы повышения квалификации" />
+       <about-item num="10 000" text="Обученных детей на базе собственных центров" />
       </div>
      </div>
     </v-container>
@@ -54,21 +41,10 @@
        Что вы получите после курса
       </h2>
       <div class="grid grid-cols-3 gap-[40px]">
-       <what-item
-        title="Удостоверение"
-        text="Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях"
-       />
-       <what-item
-        title="Знания"
-        text="По основам разработки учебно-методических комплексов
-по робототехнике и программированию"
-       />
-       <what-item
-        title="Практику"
-        text="Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)"
-        btn
-        text-popup="При наличии свободных мест"
-       />
+       <what-item title="Удостоверение" text="Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях" />
+       <what-item title="Знания" text="По основам разработки учебно-методических комплексов
+по робототехнике и программированию" />
+       <what-item title="Практику" text="Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)" btn text-popup="При наличии свободных мест" />
       </div>
      </div>
     </v-container>
@@ -78,16 +54,8 @@
      <div class="">
       <h2 class="">Профессиональные тренеры</h2>
       <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-       <SplideSlide
-        ><img
-         src="https://get.wallhere.com/photo/1600x1200-px-Danbo-dark-drops-love-mood-people-rain-sad-sorrow-1764957.jpg"
-         alt="Sample 1"
-       /></SplideSlide>
-       <SplideSlide
-        ><img
-         src="https://wallpapers.com/images/file/sad-person-pictures-4769-x-3179-q9wfthlzt0swx1k7.jpg"
-         alt="Sample 1"
-       /></SplideSlide>
+       <SplideSlide><img src="https://get.wallhere.com/photo/1600x1200-px-Danbo-dark-drops-love-mood-people-rain-sad-sorrow-1764957.jpg" alt="Sample 1" /></SplideSlide>
+       <SplideSlide><img src="https://wallpapers.com/images/file/sad-person-pictures-4769-x-3179-q9wfthlzt0swx1k7.jpg" alt="Sample 1" /></SplideSlide>
       </Splide>
      </div>
     </v-container>
@@ -98,18 +66,18 @@
 </template>
 
 <script lang="ts">
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
+ import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
-export default {
- components: {
-  Splide,
-  SplideSlide,
- },
-};
+ export default {
+  components: {
+   Splide,
+   SplideSlide,
+  },
+ };
 </script>
 
 <style>
-body.j-lock {
- overflow: hidden;
-}
+ body.j-lock {
+  overflow: hidden;
+ }
 </style>

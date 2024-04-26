@@ -6,12 +6,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
- name: 'about-item',
- props: {
-  num: String,
-  text: String,
- },
-});
+ import { defineComponent } from 'vue';
+ export default defineComponent({
+  name: 'about-item',
+  props: {
+   num: String,
+   text: String,
+  },
+ });
 </script>
