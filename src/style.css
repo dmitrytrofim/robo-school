@@ -1,0 +1,84 @@
+/* 
+ @mark imports 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+ @mark root 
+*/
+:root {
+ --sz-14: 14px;
+ --sz-16: 16px;
+ --sz-18: 18px;
+ --sz-20: 20px;
+ --sz-24: 24px;
+ --sz-30: 30px;
+ --sz-36: 36px;
+ --sz-50: 50px;
+ --sz-60: 60px;
+ --sz-70: 70px;
+
+ --t-black: #000;
+ --t-dark: #141024;
+ --t-white: #fff;
+ --t-red: #d52027;
+ --t-gray: rgba(20, 16, 36, 0.7);
+
+ --b-black: #000;
+ --b-dark: #141024;
+ --b-white: #fff;
+ --b-red: #d52027;
+ --b-light: #f9f9f9;
+}
+
+/* 
+ @mark fonts 
+ */
+/* @font-face {
+ font-family: '';
+ font-style: normal;
+ font-weight: 00;
+ font-display: swap;
+ src: url('../../fonts') format('woff2');
+} */
+
+/* 
+ @mark tailwind 
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ ::-webkit-scrollbar-button {
+  @apply w-[6px] h-0;
+ }
+ ::-webkit-scrollbar-track {
+  @apply bg-[var(--b-white)] shadow-[0px_0px_3px_var(--b-white)_inset];
+ }
+ ::-webkit-scrollbar-thumb {
+  @apply rounded-[2px] bg-[var(--b-dark)];
+ }
+ ::-webkit-resizer {
+  @apply w-[7px] h-0;
+ }
+ ::-webkit-scrollbar {
+  @apply w-[7px];
+ }
+ body {
+  @apply font-jost font-400 text-18 leading-n text-[var(--t-dark)] bg-[var(--b-white)];
+ }
+ input,
+ select,
+ button {
+  @apply outline-none;
+ }
+}
+@layer components {
+ .i-wrap {
+  @apply relative flex;
+ }
+ .i-full {
+  @apply absolute top-0 left-0 w-full h-full object-cover object-center;
+ }
+}
