@@ -73,13 +73,39 @@
      </div>
     </v-container>
    </section>
+   <section class="">
+    <v-container>
+     <div class="">
+      <h2 class="">Профессиональные тренеры</h2>
+      <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+       <SplideSlide
+        ><img
+         src="https://get.wallhere.com/photo/1600x1200-px-Danbo-dark-drops-love-mood-people-rain-sad-sorrow-1764957.jpg"
+         alt="Sample 1"
+       /></SplideSlide>
+       <SplideSlide
+        ><img
+         src="https://wallpapers.com/images/file/sad-person-pictures-4769-x-3179-q9wfthlzt0swx1k7.jpg"
+         alt="Sample 1"
+       /></SplideSlide>
+      </Splide>
+     </div>
+    </v-container>
+   </section>
   </main>
   <the-footer />
  </the-wrapper>
 </template>
 
 <script lang="ts">
-export default {};
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+
+export default {
+ components: {
+  Splide,
+  SplideSlide,
+ },
+};
 </script>
 
 <style>
