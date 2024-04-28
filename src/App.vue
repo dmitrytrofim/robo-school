@@ -101,7 +101,7 @@
 
    <section class="">
     <v-container>
-     <div class="py-[100px]">
+     <div class="pb-[100px]">
       <h2 class="title mb-[60px]">Выберите нужный пакет</h2>
       <div class="grid grid-cols-3 gap-[40px]">
        <price-item
@@ -120,6 +120,41 @@
         descr="УМК по программированию"
        />
       </div>
+     </div>
+    </v-container>
+   </section>
+
+   <section
+    class="bg-[var(--b-red)] py-[100px] bg-[url('/src/assets/img/svg/procent.svg')] bg-repeat-x bg-bottom"
+   >
+    <v-container>
+     <div class="flex justify-between text-[var(--t-white)]">
+      <div class="max-w-[400px]">
+       <h2 class="text-36 font-600 leading-[1.3] mb-[20px]">
+        Запишитесь на курс со скидкой 10%
+       </h2>
+       <p class="text-20">Акция действительна до 10 марта 2022 года</p>
+      </div>
+      <form action="#" class="w-full max-w-[500px] flex flex-col gap-[10px]">
+       <input
+        class="rounded-[5px] p-[20px] text-[var(--t-dark)] placeholder:text-[rgba(40,41,68,0.7)]"
+        type="text"
+        placeholder="Имя"
+       />
+       <input
+        class="rounded-[5px] p-[20px] text-[var(--t-dark)] placeholder:text-[rgba(40,41,68,0.7)]"
+        type="tel"
+        placeholder="Телефон"
+       />
+       <input
+        class="rounded-[5px] p-[20px] text-[var(--t-dark)] placeholder:text-[rgba(40,41,68,0.7)]"
+        type="email"
+        placeholder="E-mail"
+       />
+       <button class="bg-[var(--b-dark)] rounded-[5px] p-[20px]">
+        Оформить заявку
+       </button>
+      </form>
      </div>
     </v-container>
    </section>
