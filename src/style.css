@@ -76,6 +76,9 @@
  }
 }
 @layer components {
+ .title {
+  @apply text-[50px] font-600;
+ }
  .i-wrap {
   @apply relative flex;
  }

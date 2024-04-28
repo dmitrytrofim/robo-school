@@ -50,9 +50,7 @@
    <section class="bg-[var(--b-light)]">
     <v-container>
      <div class="py-[100px]">
-      <h2 class="text-[50px] font-600 mb-[60px]">
-       Что вы получите после курса
-      </h2>
+      <h2 class="title mb-[60px]">Что вы получите после курса</h2>
       <div class="grid grid-cols-3 gap-[40px]">
        <what-item
         title="Удостоверение"
@@ -77,19 +75,22 @@
     <v-container>
      <div class="">
       <h2 class="">Профессиональные тренеры</h2>
-      <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+      <Splide :options="splideOptions" aria-label="My Favorite Images">
        <SplideSlide
         ><img
+         class="w-full h-full object-cover object-center"
          src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"
          alt="Sample 1"
        /></SplideSlide>
        <SplideSlide
         ><img
+         class="w-full h-full object-cover object-center"
          src="https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_1280.jpg"
          alt="Sample 1"
        /></SplideSlide>
        <SplideSlide
         ><img
+         class="w-full h-full object-cover object-center"
          src="https://cdn.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_1280.jpg"
          alt="Sample 1"
        /></SplideSlide>
@@ -109,6 +110,13 @@ export default {
  components: {
   Splide,
   SplideSlide,
+ },
+ data() {
+  return {
+   splideOptions: {
+    perPage: 2,
+   },
+  };
  },
 };
 </script>
