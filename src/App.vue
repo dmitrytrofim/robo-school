@@ -80,12 +80,17 @@
       <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
        <SplideSlide
         ><img
-         src="https://get.wallhere.com/photo/1600x1200-px-Danbo-dark-drops-love-mood-people-rain-sad-sorrow-1764957.jpg"
+         src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"
          alt="Sample 1"
        /></SplideSlide>
        <SplideSlide
         ><img
-         src="https://wallpapers.com/images/file/sad-person-pictures-4769-x-3179-q9wfthlzt0swx1k7.jpg"
+         src="https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_1280.jpg"
+         alt="Sample 1"
+       /></SplideSlide>
+       <SplideSlide
+        ><img
+         src="https://cdn.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_1280.jpg"
          alt="Sample 1"
        /></SplideSlide>
       </Splide>
