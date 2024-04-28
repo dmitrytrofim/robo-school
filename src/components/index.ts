@@ -5,6 +5,7 @@ import VContainer from '@components/commons/VContainer.vue';
 import VButton from './VButton.vue';
 import WhatItem from './what/WhatItem.vue';
 import AboutItem from './about/AboutItem.vue';
+import PriceItem from './price/PriceItem.vue';
 
 export default [
  TheHeader,
@@ -14,4 +15,5 @@ export default [
  VButton,
  WhatItem,
  AboutItem,
+ PriceItem,
 ];

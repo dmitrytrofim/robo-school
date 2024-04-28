@@ -73,8 +73,8 @@
    </section>
    <section class="">
     <v-container>
-     <div class="">
-      <h2 class="">Профессиональные тренеры</h2>
+     <div class="py-[100px]">
+      <h2 class="title mb-[60px]">Профессиональные тренеры</h2>
       <Splide :options="splideOptions" aria-label="My Favorite Images">
        <SplideSlide
         ><img
@@ -95,6 +95,31 @@
          alt="Sample 1"
        /></SplideSlide>
       </Splide>
+     </div>
+    </v-container>
+   </section>
+
+   <section class="">
+    <v-container>
+     <div class="py-[100px]">
+      <h2 class="title mb-[60px]">Выберите нужный пакет</h2>
+      <div class="grid grid-cols-3 gap-[40px]">
+       <price-item
+        name="– PRO –"
+        cost="20.000 ₽"
+        descr="УМК по робототетхнике и программированию"
+       />
+       <price-item
+        name="– ROBO –"
+        cost="15.000 ₽"
+        descr="УМК по робототетхнике"
+       />
+       <price-item
+        name="– PROG –"
+        cost="10.000 ₽"
+        descr="УМК по программированию"
+       />
+      </div>
      </div>
     </v-container>
    </section>
