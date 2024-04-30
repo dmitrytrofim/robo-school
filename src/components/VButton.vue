@@ -1,7 +1,7 @@
 <template>
  <a
   href="#"
-  class="text-center inline-block text-[var(--t-white)] bg-[var(--b-red)] rounded-[5px] p-[25px_54px]"
+  class="text-center inline-block text-[var(--t-white)] bg-[var(--b-red)] rounded-[5px] p-[25px_54px] max-[768px]:p-[15px_20px]"
   ><slot></slot
  ></a>
 </template>

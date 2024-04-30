@@ -2,9 +2,10 @@
  <div
   class="flex flex-col w-full items-center text-center p-[40px] rounded-[20px] border-[1px] border-[rgba(20,16,36,0.2)] transition-[transform_0.2s_linear_0s,_background-color_0.2s_linear_0s] hover:scale-[1.1] hover:bg-[var(--b-dark)] [&_span]:hover:text-[var(--t-white)]"
  >
-  <span class="text-30 font-600 mb-[80px] transition-[color_0.2s_linear_0s]">{{
-   name
-  }}</span>
+  <span
+   class="text-30 font-600 mb-[80px] transition-[color_0.2s_linear_0s] max-[768px]:mb-[50px]"
+   >{{ name }}</span
+  >
   <span class="text-50 font-600 mb-[20px] transition-[color_0.2s_linear_0s]">{{
    cost
   }}</span>

@@ -4,8 +4,12 @@
   <main>
    <section class="bg-[var(--b-dark)]">
     <v-container>
-     <div class="relative text-[var(--t-white)] pt-[340px] pb-[410px]">
-      <div class="relative z-10">
+     <div
+      class="relative flex flex-col gap-[20px] text-[var(--t-white)] pt-[340px] pb-[410px] max-[1024px]:p-[100px_0_0]"
+     >
+      <div
+       class="relative flex flex-col items-start z-10 max-[1024px]:items-center max-[1024px]:text-center"
+      >
        <h1 class="text-70 font-600 mb-[20px]">ROBO SCHOOL</h1>
        <p class="max-w-[470px] mb-[50px]">
         Курсы повышения квалификации по робототехнике для педагогов начальной
@@ -14,7 +18,7 @@
        <v-button>Записаться на курс</v-button>
       </div>
       <img
-       class="absolute bottom-0 right-[-200px] w-[783px] aspect-[0.853]"
+       class="absolute bottom-0 right-[-200px] w-[783px] aspect-[0.853] max-[1024px]:relative max-[1024px]:w-full max-[1024px]:max-w-[783px] max-[1024px]:right-0 max-[1024px]:self-center"
        src="/src/assets/img/woman.png"
        alt=""
       />
@@ -23,13 +27,15 @@
    </section>
    <div class="">
     <v-container>
-     <div class="py-[120px]">
+     <div class="py-[120px] max-[1024px]:py-[100px]">
       <p class="max-w-[890px] text-30 mb-[60px]">
        <span class="font-600">Robo School</span> – учреждение для формирования
        кадрового педагогического резерва в сфере робототехники и
        программирования
       </p>
-      <div class="grid grid-cols-4 gap-[40px]">
+      <div
+       class="grid grid-cols-4 gap-[40px] max-[1024px]:grid-cols-2 max-[1024px]:gap-[20px] max-[360px]:grid-cols-1"
+      >
        <about-item
         num="10"
         text="УМК по различным направлениям по робототехнике"
@@ -51,7 +57,7 @@
     <v-container>
      <div class="py-[100px]">
       <h2 class="title mb-[60px]">Что вы получите после курса</h2>
-      <div class="grid grid-cols-3 gap-[40px]">
+      <div class="grid grid-cols-3 gap-[40px] max-[1024px]:grid-cols-1">
        <what-item
         title="Удостоверение"
         text="Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях"
@@ -103,7 +109,9 @@
     <v-container>
      <div class="pb-[100px]">
       <h2 class="title mb-[60px]">Выберите нужный пакет</h2>
-      <div class="grid grid-cols-3 gap-[40px]">
+      <div
+       class="grid grid-cols-3 gap-[40px] max-[1100px]:grid-cols-2 max-[768px]:grid-cols-1"
+      >
        <price-item
         name="– PRO –"
         cost="20.000 ₽"
@@ -175,6 +183,11 @@ export default {
   return {
    splideOptions: {
     perPage: 2,
+    breakpoints: {
+     640: {
+      perPage: 1,
+     },
+    },
    },
   };
  },
