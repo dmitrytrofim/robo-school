@@ -5,7 +5,9 @@
     class="relative flex items-center justify-between text-[var(--t-white)] py-[30px]"
    >
     <a href="#" class="relative text-30 font-700 z-10">ROBO.SCHOOL</a>
-    <nav class="absolute inset-0 flex items-center justify-center">
+    <nav
+     class="absolute inset-0 flex items-center justify-center max-[1024px]:hidden"
+    >
      <ul class="flex items-center justify-center gap-[40px]">
       <li class="">
        <a href="#" class="text-20 font-400">О школе</a>
@@ -18,7 +20,9 @@
       </li>
      </ul>
     </nav>
-    <a href="tel:+71234567891" class="relative text-30 font-600 z-10"
+    <a
+     href="tel:+71234567891"
+     class="relative text-30 font-600 z-10 max-[420px]:hidden"
      >+7 123 456 78 91</a
     >
    </div>
