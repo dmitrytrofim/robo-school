@@ -136,7 +136,9 @@
     class="bg-[var(--b-red)] py-[100px] bg-[url('/src/assets/img/svg/procent.svg')] bg-repeat-x bg-bottom"
    >
     <v-container>
-     <div class="flex justify-between text-[var(--t-white)]">
+     <div
+      class="flex justify-between text-[var(--t-white)] max-[1024px]:flex-col max-[1024px]:items-center gap-[30px] max-[1024px]:text-center"
+     >
       <div class="max-w-[400px]">
        <h2 class="text-36 font-600 leading-[1.3] mb-[20px]">
         Запишитесь на курс со скидкой 10%
